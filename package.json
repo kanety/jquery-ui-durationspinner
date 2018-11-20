@@ -1,0 +1,20 @@
+{
+  "name": "jquery-ui-durationspinner",
+  "version": "0.1.0",
+  "main": "dist/jquery-ui-durationspinner.min.js",
+  "author": "Yoshikazu Kaneta <kaneta@sitebridge.co.jp>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kanety/jquery-ui-durationspinner.git"
+  },
+  "license": "MIT",
+  "scripts": {
+    "uglify": "uglifyjs dist/jquery-ui-durationspinner.js -c -o dist/jquery-ui-durationspinner.min.js"
+  },
+  "dependencies": {
+    "jquery": "^3.3.1",
+    "jquery-ui-dist": "^1.12.1",
+    "moment": "^2.22.2",
+    "moment-duration-format": "^2.2.2"
+  }
+}

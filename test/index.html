@@ -1,0 +1,27 @@
+<html>
+<head>
+  <script src="../node_modules/jquery/dist/jquery.min.js"></script>
+  <script src="../node_modules/jquery-ui-dist/jquery-ui.min.js"></script>
+  <link rel="stylesheet" href="../node_modules/jquery-ui-dist/jquery-ui.min.css">
+  <script src="../node_modules/moment/min/moment.min.js"></script>
+  <script src="../node_modules/moment-duration-format/lib/moment-duration-format.js"></script>
+  <script src="../dist/jquery-ui-durationspinner.js"></script>
+</head>
+<body>
+  <h1>Default setting</h1>
+  <input type="text" name="text" class="default" />
+  <script>
+  $('input.default').durationspinner();
+  </script>
+  <h1>hh:mm:ss</h1>
+  <input type="text" name="text" class="hhmmss" />
+  <script>
+  $('input.hhmmss').durationspinner({ format: 'hh:mm:ss', step: 1, page: 60 });
+  </script>
+  <h1>d“ú hhŠÔ mm•ª ss•b</h1>
+  <input type="text" name="text" class="dhhmmss" />
+  <script>
+  $('input.dhhmmss').durationspinner({ format: 'd“ú hhŠÔ mm•ª ss•b', step: 1, page: 60 });
+  </script>
+</body>
+</html>
