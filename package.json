@@ -9,12 +9,22 @@
   },
   "license": "MIT",
   "scripts": {
-    "uglify": "uglifyjs dist/jquery-ui-durationspinner.js -c -o dist/jquery-ui-durationspinner.min.js"
+    "build": "uglifyjs src/jquery-ui-durationspinner.js -o dist/jquery-ui-durationspinner.min.js -c",
+    "test": "karma start"
   },
   "dependencies": {
     "jquery": "^3.3.1",
     "jquery-ui-dist": "^1.12.1",
     "moment": "^2.22.2",
     "moment-duration-format": "^2.2.2"
+  },
+  "devDependencies": {
+    "karma": "^3.1.1",
+    "karma-chrome-launcher": "^2.2.0",
+    "karma-coverage": "^1.1.2",
+    "karma-firefox-launcher": "^1.1.0",
+    "karma-html2js-preprocessor": "^1.1.0",
+    "karma-ie-launcher": "^1.0.0",
+    "karma-jasmine": "^2.0.1"
   }
 }

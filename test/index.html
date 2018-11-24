@@ -6,23 +6,19 @@
   <link rel="stylesheet" href="../node_modules/jquery-ui-dist/jquery-ui.min.css">
   <script src="../node_modules/moment/min/moment.min.js"></script>
   <script src="../node_modules/moment-duration-format/lib/moment-duration-format.js"></script>
-  <script src="../dist/jquery-ui-durationspinner.js"></script>
+  <script src="../src/jquery-ui-durationspinner.js"></script>
 </head>
 <body>
-  <h1>Default setting</h1>
-  <input type="text" name="text" class="default" />
+  <h1>hh:mm</h1>
+  <input type="text" name="text" class="hm" />
   <script>
-  $('input.default').durationspinner();
+  $('input.hm').durationspinner();
   </script>
-  <h1>hh:mm:ss</h1>
-  <input type="text" name="text" class="hhmmss" />
+
+  <h1>d days hh:mm:ss</h1>
+  <input type="text" name="text" class="dhms" />
   <script>
-  $('input.hhmmss').durationspinner({ format: 'hh:mm:ss', step: 1, page: 60 });
-  </script>
-  <h1>d日 hh時間 mm分 ss秒</h1>
-  <input type="text" name="text" class="dhhmmss" />
-  <script>
-  $('input.dhhmmss').durationspinner({ format: 'd日 hh時間 mm分 ss秒', step: 1, page: 60 });
+  $('input.dhms').durationspinner({ format: 'd [days] hh:mm:ss', step: 1, page: 60 });
   </script>
 </body>
 </html>

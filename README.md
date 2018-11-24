@@ -4,11 +4,11 @@ Time duration spinner using jquery-ui.
 
 ## Dependencies
 
+Include following libraries before use.
+
 * jquery-ui-dist
 * moment
 * moment-duration-format
-
-You should include these libraries before use.
 
 ## Usage
 
@@ -24,12 +24,12 @@ Change time format to `hh:mm:ss`:
 $('input.spinner').durationspinner({ format: 'hh:mm:ss', step: 1, page: 60 });
 ```
 
-You can use `DdHhmSs` as the format.
+You can use `dhms` for the format.
 
-* D,d: days
-* H,h: hours
+* d: days
+* h: hours
 * m: minutes
-* S,s: seconds
+* s: seconds
 
 ## License
 
