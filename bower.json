@@ -1,5 +1,5 @@
 {
-  "name": "jquery-ui-durationspinner",
+  "name": "@kanety/jquery-ui-durationspinner",
   "version": "0.1.0",
   "main": "dist/jquery-ui-durationspinner.min.js"
 }
