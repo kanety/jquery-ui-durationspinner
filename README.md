@@ -10,6 +10,12 @@ Include following libraries before use.
 * moment
 * moment-duration-format
 
+## Installation
+
+Install from npm:
+
+    $ npm install @kanety/jquery-ui-durationspinner --save
+
 ## Usage
 
 Create a spinner:
